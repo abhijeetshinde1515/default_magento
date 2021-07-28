@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--315595325\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods, 1 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.myProfile.TestMyProfile" hash-for-method="testUserProfileMyAccountSection">testUserProfileMyAccountSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.shopping.TestProductShopping" hash-for-method="testAddProductToCart">testAddProductToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.shopping.TestProductShopping" hash-for-method="testAddProductToCompare">testAddProductToCompare</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.shopping.TestProductShopping" hash-for-method="testAddRemoveProductFromWishList">testAddRemoveProductFromWishList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.demo.TestDemo" hash-for-method="testAutomationSetUp">testAutomationSetUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.home.TestHomePage" hash-for-method="testEmailSubscription">testEmailSubscription</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.home.TestHomePage" hash-for-method="testHomePageCategoryLinks">testHomePageCategoryLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.home.TestHomePage" hash-for-method="testHomePageInformationLinks">testHomePageInformationLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.home.TestHomePage" hash-for-method="testLogInAuthenticatedUser">testLogInAuthenticatedUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.shopping.TestProductShopping" hash-for-method="testNewLumaYogaCollectionSortingMethods">testNewLumaYogaCollectionSortingMethods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.shopping.TestProductShopping" hash-for-method="testProductDetailsMoreInformationAndReviews">testProductDetailsMoreInformationAndReviews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.home.TestHomePage" hash-for-method="testRegisterUserByUniqueEmailId">testRegisterUserByUniqueEmailId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.home.TestHomePage" hash-for-method="testSearchProductsFromHomePage">testSearchProductsFromHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.shopping.TestShoppingCart" hash-for-method="testSecureCheckOutForProducts">testSecureCheckOutForProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.home.TestHomePage" hash-for-method="testUserProfileNavigationLinks">testUserProfileNavigationLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.myProfile.TestMyProfile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserProfileMyAccountSection">
+                  </a> <!-- testUserProfileMyAccountSection -->
+                  <span class="method-name">testUserProfileMyAccountSection</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;action switch&quot; tabindex=&quot;-1&quot; data-action=&quot;customer-menu-toggle&quot;&gt;...&lt;/button&gt; is not clickable at point (1229, 21). Other element would receive the click: &lt;div class=&quot;loading-mask&quot; data-role=&quot;loader&quot;&gt;...&lt;/div&gt;
+  (Session info: headless chrome=92.0.4515.107)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0KBR3DP&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59616}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2225be3ada4554358d740293fe0920a5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at framework.BaseFragment.click(BaseFragment.java:51)
+	at pages.home.HomePage.SignOut(HomePage.java:101)
+	at tests.myProfile.TestMyProfile.testUserProfileMyAccountSection(TestMyProfile.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.demo.TestDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAutomationSetUp">
+                  </a> <!-- testAutomationSetUp -->
+                  <span class="method-name">testAutomationSetUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.home.TestHomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmailSubscription">
+                  </a> <!-- testEmailSubscription -->
+                  <span class="method-name">testEmailSubscription</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomePageCategoryLinks">
+                  </a> <!-- testHomePageCategoryLinks -->
+                  <span class="method-name">testHomePageCategoryLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomePageInformationLinks">
+                  </a> <!-- testHomePageInformationLinks -->
+                  <span class="method-name">testHomePageInformationLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogInAuthenticatedUser">
+                  </a> <!-- testLogInAuthenticatedUser -->
+                  <span class="method-name">testLogInAuthenticatedUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterUserByUniqueEmailId">
+                  </a> <!-- testRegisterUserByUniqueEmailId -->
+                  <span class="method-name">testRegisterUserByUniqueEmailId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchProductsFromHomePage">
+                  </a> <!-- testSearchProductsFromHomePage -->
+                  <span class="method-name">testSearchProductsFromHomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserProfileNavigationLinks">
+                  </a> <!-- testUserProfileNavigationLinks -->
+                  <span class="method-name">testUserProfileNavigationLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.shopping.TestShoppingCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSecureCheckOutForProducts">
+                  </a> <!-- testSecureCheckOutForProducts -->
+                  <span class="method-name">testSecureCheckOutForProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.shopping.TestProductShopping</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddProductToCart">
+                  </a> <!-- testAddProductToCart -->
+                  <span class="method-name">testAddProductToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddProductToCompare">
+                  </a> <!-- testAddProductToCompare -->
+                  <span class="method-name">testAddProductToCompare</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddRemoveProductFromWishList">
+                  </a> <!-- testAddRemoveProductFromWishList -->
+                  <span class="method-name">testAddRemoveProductFromWishList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewLumaYogaCollectionSortingMethods">
+                  </a> <!-- testNewLumaYogaCollectionSortingMethods -->
+                  <span class="method-name">testNewLumaYogaCollectionSortingMethods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProductDetailsMoreInformationAndReviews">
+                  </a> <!-- testProductDetailsMoreInformationAndReviews -->
+                  <span class="method-name">testProductDetailsMoreInformationAndReviews</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--315595325\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;pages.home.MyAccountPage&quot;/&gt;
+      &lt;class name=&quot;tests.demo.TestDemo&quot;/&gt;
+      &lt;class name=&quot;tests.shopping.TestProductShopping&quot;/&gt;
+      &lt;class name=&quot;pages.home.SearchResultsPage&quot;/&gt;
+      &lt;class name=&quot;pages.catalogue.ProductDescriptionPage&quot;/&gt;
+      &lt;class name=&quot;pages.sections.WhatsNewSection&quot;/&gt;
+      &lt;class name=&quot;utils.AssertUtil&quot;/&gt;
+      &lt;class name=&quot;pages.home.MinicartModal&quot;/&gt;
+      &lt;class name=&quot;tests.myProfile.TestMyProfile&quot;/&gt;
+      &lt;class name=&quot;pages.sections.MenSection&quot;/&gt;
+      &lt;class name=&quot;framework.TestDocumentation&quot;/&gt;
+      &lt;class name=&quot;utils.GeneratorUtils&quot;/&gt;
+      &lt;class name=&quot;pages.home.HomePage&quot;/&gt;
+      &lt;class name=&quot;baseTestScripts.TestNGBaseTest&quot;/&gt;
+      &lt;class name=&quot;tests.shopping.TestShoppingCart&quot;/&gt;
+      &lt;class name=&quot;pages.catalogue.CompareProductListPage&quot;/&gt;
+      &lt;class name=&quot;pages.home.CustomerSignInPage&quot;/&gt;
+      &lt;class name=&quot;pages.sections.GearSection&quot;/&gt;
+      &lt;class name=&quot;baseTestScripts.TestData&quot;/&gt;
+      &lt;class name=&quot;tests.home.TestHomePage&quot;/&gt;
+      &lt;class name=&quot;pages.catalogue.CategoryPage&quot;/&gt;
+      &lt;class name=&quot;pages.catalogue.ShoppingCartPage&quot;/&gt;
+      &lt;class name=&quot;pages.home.SignOutPage&quot;/&gt;
+      &lt;class name=&quot;pages.home.MyWishListPage&quot;/&gt;
+      &lt;class name=&quot;pages.sections.WomenSection&quot;/&gt;
+      &lt;class name=&quot;framework.CommonPage&quot;/&gt;
+      &lt;class name=&quot;pages.home.InformationLinksPage&quot;/&gt;
+      &lt;class name=&quot;pages.sections.TrainingSection&quot;/&gt;
+      &lt;class name=&quot;pages.demo.Demo&quot;/&gt;
+      &lt;class name=&quot;pages.home.CustomerRegisterPage&quot;/&gt;
+      &lt;class name=&quot;pages.catalogue.NewLumaYogaCollection&quot;/&gt;
+      &lt;class name=&quot;pages.catalogue.CheckOutPage&quot;/&gt;
+      &lt;class name=&quot;framework.CommonModal&quot;/&gt;
+      &lt;class name=&quot;framework.BaseFragment&quot;/&gt;
+      &lt;class name=&quot;pages.sections.SaleSection&quot;/&gt;
+      &lt;class name=&quot;utils.ReportUtils&quot;/&gt;
+      &lt;class name=&quot;pages.catalogue.ProductSorterFunction&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (37 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testSecureCheckOutForProducts')
+data.setCell(0, 2, 'tests.shopping.TestShoppingCart')
+data.setCell(0, 3, 87820);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testHomePageInformationLinks')
+data.setCell(1, 2, 'tests.home.TestHomePage')
+data.setCell(1, 3, 77168);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testHomePageCategoryLinks')
+data.setCell(2, 2, 'tests.home.TestHomePage')
+data.setCell(2, 3, 66094);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testAddProductToCompare')
+data.setCell(3, 2, 'tests.shopping.TestProductShopping')
+data.setCell(3, 3, 52794);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testEmailSubscription')
+data.setCell(4, 2, 'tests.home.TestHomePage')
+data.setCell(4, 3, 48778);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testUserProfileNavigationLinks')
+data.setCell(5, 2, 'tests.home.TestHomePage')
+data.setCell(5, 3, 47180);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testUserProfileMyAccountSection')
+data.setCell(6, 2, 'tests.myProfile.TestMyProfile')
+data.setCell(6, 3, 41156);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testNewLumaYogaCollectionSortingMethods')
+data.setCell(7, 2, 'tests.shopping.TestProductShopping')
+data.setCell(7, 3, 37719);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testAddRemoveProductFromWishList')
+data.setCell(8, 2, 'tests.shopping.TestProductShopping')
+data.setCell(8, 3, 35771);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testProductDetailsMoreInformationAndReviews')
+data.setCell(9, 2, 'tests.shopping.TestProductShopping')
+data.setCell(9, 3, 34846);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testLogInAuthenticatedUser')
+data.setCell(10, 2, 'tests.home.TestHomePage')
+data.setCell(10, 3, 32430);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testRegisterUserByUniqueEmailId')
+data.setCell(11, 2, 'tests.home.TestHomePage')
+data.setCell(11, 3, 32373);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testAddProductToCart')
+data.setCell(12, 2, 'tests.shopping.TestProductShopping')
+data.setCell(12, 3, 26273);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testSearchProductsFromHomePage')
+data.setCell(13, 2, 'tests.home.TestHomePage')
+data.setCell(13, 3, 26026);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testAutomationSetUp')
+data.setCell(14, 2, 'tests.demo.TestDemo')
+data.setCell(14, 3, 18506);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testNewLumaYogaCollectionSortingMethods</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Navigate to Magento Website Home Page.</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Default Welcome Message is Displayed.</span>
+                <span class="reporter-method-output">STEP - Go to New Luma Yoga Collection</span>
+                <span class="reporter-method-output">Click Partial Link As - Shop New Yoga</span>
+                <span class="reporter-method-output">Verified - New Luma Yoga Collection Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Validate Sorting Options</span>
+                <span class="reporter-method-output">Select Sorting Option As - price</span>
+                <span class="reporter-method-output">Click - Position
+ProductName
+Price
+</span>
+                <span class="reporter-method-output">Select Sorting Option As - position</span>
+                <span class="reporter-method-output">Click - Position
+ProductName
+Price
+</span>
+                <span class="reporter-method-output">Select Sorting Option As - name</span>
+                <span class="reporter-method-output">Click - Position
+ProductName
+Price
+</span>
+                <span class="reporter-method-output">STEP - Validate Sorting Orders</span>
+                <span class="reporter-method-output">Click - SetDescendingDirection</span>
+                <span class="reporter-method-output">Click - SetAscendingDirection</span>
+                <span class="reporter-method-output">NEXT STEP - Returning back to Home Page...</span>
+                <span class="reporter-method-output">Click Link As - Home</span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testSecureCheckOutForProducts</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Navigate to Magento Website Home Page.</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Default Welcome Message is Displayed.</span>
+                <span class="reporter-method-output">STEP - Go to Customer Log In Page and Validate Authenicated User Log In.</span>
+                <span class="reporter-method-output">Click - SignIn</span>
+                <span class="reporter-method-output">Verified - Customer Log In Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Set username and Password</span>
+                <span class="reporter-method-output">Click - SignIn</span>
+                <span class="reporter-method-output">Verified - Logged In User Welcome Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Validate Empty Cart and Close</span>
+                <span class="reporter-method-output">Click - MyCart</span>
+                <span class="reporter-method-output">Verified - Empty Cart Message is Displayed</span>
+                <span class="reporter-method-output">Click - Close</span>
+                <span class="reporter-method-output">STEP - Choose Product Radiant Tee to see details</span>
+                <span class="reporter-method-output">Click Link As - Radiant Tee</span>
+                <span class="reporter-method-output">Verified - Product Name Displayed Correctly</span>
+                <span class="reporter-method-output">Verified - Price is Displayed</span>
+                <span class="reporter-method-output">STEP - Select Size and Color for product</span>
+                <span class="reporter-method-output">Click - S</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">Verified - Success Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Clicking LUMA Logo to Return On Home Page...</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">STEP - Validate Non-Empty Cart and Close</span>
+                <span class="reporter-method-output">Verified - Item Quantity is Displayed</span>
+                <span class="reporter-method-output">Click - MyCart
+1
+1</span>
+                <span class="reporter-method-output">Verified - Item Prices are Correct</span>
+                <span class="reporter-method-output">Verified - Total Items are Correct</span>
+                <span class="reporter-method-output">STEP - View Shopping Cart</span>
+                <span class="reporter-method-output">Click - ViewandEditCart</span>
+                <span class="reporter-method-output">Verified - Page Title is Displayed</span>
+                <span class="reporter-method-output">STEP - Proceed To Checkout</span>
+                <span class="reporter-method-output">Click - ProceedtoCheckout</span>
+                <span class="reporter-method-output">STEP - Clicking LUMA Logo to Return On Home Page...</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">STEP - Remove Items from Mini Cart</span>
+                <span class="reporter-method-output">Click - MyCart
+1
+1</span>
+                <span class="reporter-method-output">Click - Remove</span>
+                <span class="reporter-method-output">STEP - Clicking LUMA Logo to Return On Home Page...</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">STEP - Validate Empty Cart and Close</span>
+                <span class="reporter-method-output">Click - MyCart</span>
+                <span class="reporter-method-output">Verified - Empty Cart Message is Displayed</span>
+                <span class="reporter-method-output">Click - Close</span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testProductDetailsMoreInformationAndReviews</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Navigate to Magento Website Home Page.</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Default Welcome Message is Displayed.</span>
+                <span class="reporter-method-output">STEP - Choose Product Breathe-Easy Tank to see details</span>
+                <span class="reporter-method-output">Click Link As - Fusion Backpack</span>
+                <span class="reporter-method-output">Verified - Product Name Displayed Correctly</span>
+                <span class="reporter-method-output">STEP - Validate Product Details</span>
+                <span class="reporter-method-output">Click Link As - Details</span>
+                <span class="reporter-method-output">Verified - Product Details shown correctly for Fusion Backpack</span>
+                <span class="reporter-method-output">STEP - Validate More Information</span>
+                <span class="reporter-method-output">Click Link As - More Information</span>
+                <span class="reporter-method-output">Verified - Product More Information shown correctly for Fusion Backpack</span>
+                <span class="reporter-method-output">STEP - Validate Reviews</span>
+                <span class="reporter-method-output">Verified - Product Review Section shown correctly for Fusion Backpack</span>
+                <span class="reporter-method-output">STEP - Submit a Review</span>
+                <span class="reporter-method-output">Verified - You are Reviewing Fusion Backpack</span>
+                <span class="reporter-method-output">Click - SubmitReview</span>
+                <span class="reporter-method-output">Verified - Review Submitted for Review Successfully</span>
+                <span class="reporter-method-output">NEXT STEP - Returning back to Home Page...</span>
+                <span class="reporter-method-output">Click Link As - Home</span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testAddProductToCart</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Navigate to Magento Website Home Page.</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Default Welcome Message is Displayed.</span>
+                <span class="reporter-method-output">STEP - Choose Product Radiant Tee to see details</span>
+                <span class="reporter-method-output">Click Link As - Radiant Tee</span>
+                <span class="reporter-method-output">Verified - Product Name Displayed Correctly</span>
+                <span class="reporter-method-output">Verified - Price is Displayed</span>
+                <span class="reporter-method-output">STEP - Select Size and Color for product</span>
+                <span class="reporter-method-output">Click - L</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">Verified - Success Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testUserProfileNavigationLinks</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Navigate to Magento Website Home Page.</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Default Welcome Message is Displayed.</span>
+                <span class="reporter-method-output">STEP - Go to Customer Log In Page and Validate Authenicated User Log In.</span>
+                <span class="reporter-method-output">Click - SignIn</span>
+                <span class="reporter-method-output">Verified - Customer Log In Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Set username and Password</span>
+                <span class="reporter-method-output">Click - SignIn</span>
+                <span class="reporter-method-output">Verified - Logged In User Welcome Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Go to My Account</span>
+                <span class="reporter-method-output">Click - Change</span>
+                <span class="reporter-method-output">Click Link As - My Account</span>
+                <span class="reporter-method-output">Verified - My Account Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Clicking LUMA Logo to Return On Home Page...</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">STEP - Go to My Wish List Page</span>
+                <span class="reporter-method-output">Click - Change</span>
+                <span class="reporter-method-output">Click Partial Link As - My Wish List</span>
+                <span class="reporter-method-output">Verified - My Wish List Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Clicking LUMA Logo to Return On Home Page...</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">STEP - Sign Out</span>
+                <span class="reporter-method-output">Click - Change</span>
+                <span class="reporter-method-output">Click Link As - Sign Out</span>
+                <span class="reporter-method-output">Verified - Sign Out Message is Displayed</span>
+                <span class="reporter-method-output">Verified - Sign Out Information Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testAddRemoveProductFromWishList</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Navigate to Magento Website Home Page.</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Default Welcome Message is Displayed.</span>
+                <span class="reporter-method-output">STEP - Choose Product Radiant Tee to see details</span>
+                <span class="reporter-method-output">Click Link As - Argus All-Weather Tank</span>
+                <span class="reporter-method-output">Verified - Product Name Displayed Correctly</span>
+                <span class="reporter-method-output">STEP - Add Product to Wish List</span>
+                <span class="reporter-method-output">Verified - Error Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Set username and Password</span>
+                <span class="reporter-method-output">Click - SignIn</span>
+                <span class="reporter-method-output">Verified - Logged In User Welcome Message is Displayed</span>
+                <span class="reporter-method-output">Verified - Product Added to Wish List Successfully</span>
+                <span class="reporter-method-output">Click - REMOVETHISITEM</span>
+                <span class="reporter-method-output">Verified - Product Removed from Wish List Successfully</span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testSearchProductsFromHomePage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Navigate to Magento Website Home Page.</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Default Welcome Message is Displayed.</span>
+                <span class="reporter-method-output">STEP - Search for a Product as ABC</span>
+                <span class="reporter-method-output">Click - Search</span>
+                <span class="reporter-method-output">Verified - Search Results is Displayed</span>
+                <span class="reporter-method-output">Verified - No Search Results Message is Displayed</span>
+                <span class="reporter-method-output">NEXT STEP - Returning back to Home Page...</span>
+                <span class="reporter-method-output">Click Link As - Home</span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testHomePageCategoryLinks</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Navigate to Magento Website Home Page.</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Default Welcome Message is Displayed.</span>
+                <span class="reporter-method-output">STEP - Validate Whats New Section</span>
+                <span class="reporter-method-output">Click Link As - What's New</span>
+                <span class="reporter-method-output">Verified - Page title Displayed Correctly</span>
+                <span class="reporter-method-output">STEP - Validate Women Section</span>
+                <span class="reporter-method-output">NEXT STEP - Returning back to Home Page...</span>
+                <span class="reporter-method-output">Click Link As - Home</span>
+                <span class="reporter-method-output">Click Link As - Women</span>
+                <span class="reporter-method-output">Verified - Page title Displayed Correctly</span>
+                <span class="reporter-method-output">STEP - Validate Men Section</span>
+                <span class="reporter-method-output">NEXT STEP - Returning back to Home Page...</span>
+                <span class="reporter-method-output">Click Link As - Home</span>
+                <span class="reporter-method-output">Click Link As - Men</span>
+                <span class="reporter-method-output">Verified - Page title Displayed Correctly</span>
+                <span class="reporter-method-output">STEP - Validate Gear Section</span>
+                <span class="reporter-method-output">NEXT STEP - Returning back to Home Page...</span>
+                <span class="reporter-method-output">Click Link As - Home</span>
+                <span class="reporter-method-output">Click Link As - Gear</span>
+                <span class="reporter-method-output">Verified - Page title Displayed Correctly</span>
+                <span class="reporter-method-output">STEP - Validate Training Section</span>
+                <span class="reporter-method-output">NEXT STEP - Returning back to Home Page...</span>
+                <span class="reporter-method-output">Click Link As - Home</span>
+                <span class="reporter-method-output">Click Link As - Training</span>
+                <span class="reporter-method-output">Verified - Page title Displayed Correctly</span>
+                <span class="reporter-method-output">STEP - Validate Sale Section</span>
+                <span class="reporter-method-output">NEXT STEP - Returning back to Home Page...</span>
+                <span class="reporter-method-output">Click Link As - Home</span>
+                <span class="reporter-method-output">Click Link As - Sale</span>
+                <span class="reporter-method-output">Verified - Page title Displayed Correctly</span>
+                <span class="reporter-method-output">NEXT STEP - Returning back to Home Page...</span>
+                <span class="reporter-method-output">Click Link As - Home</span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testRegisterUserByUniqueEmailId</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Navigate to Magento Website Home Page.</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Default Welcome Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Go to Customer Register Page</span>
+                <span class="reporter-method-output">Click - CreateanAccount</span>
+                <span class="reporter-method-output">Verified - Customer Register Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Set required fields</span>
+                <span class="reporter-method-output">STEP - Create account</span>
+                <span class="reporter-method-output">Click - CreateanAccount</span>
+                <span class="reporter-method-output">Verified - Customer Registered successfully!</span>
+                <span class="reporter-method-output">Verified - My Account Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Clicking LUMA Logo to Return On Home Page...</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">Verified - Logged In User Welcome Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testLogInAuthenticatedUser</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Navigate to Magento Website Home Page.</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Default Welcome Message is Displayed.</span>
+                <span class="reporter-method-output">STEP - Go to Customer Log In Page and Validate Authenicated User Log In.</span>
+                <span class="reporter-method-output">Click - SignIn</span>
+                <span class="reporter-method-output">Verified - Customer Log In Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Set username and Password</span>
+                <span class="reporter-method-output">Click - SignIn</span>
+                <span class="reporter-method-output">Verified - Logged In User Welcome Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testHomePageInformationLinks</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Navigate to Magento Website Home Page.</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Default Welcome Message is Displayed.</span>
+                <span class="reporter-method-output">Click Link As - About us</span>
+                <span class="reporter-method-output">Verified - About us Page is Displayed.</span>
+                <span class="reporter-method-output">Verified - Abous us Content is Displayed</span>
+                <span class="reporter-method-output">STEP - Clicking LUMA Logo to Return On Home Page...</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">Click Link As - Customer Service</span>
+                <span class="reporter-method-output">Verified - Customer Service Page is Displayed.</span>
+                <span class="reporter-method-output">Verified - Customer Service Content is Displayed</span>
+                <span class="reporter-method-output">STEP - Clicking LUMA Logo to Return On Home Page...</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">Click Link As - Search Terms</span>
+                <span class="reporter-method-output">Verified - Search Terms Page is Displayed.</span>
+                <span class="reporter-method-output">Verified - Search Content is Displayed</span>
+                <span class="reporter-method-output">STEP - Clicking LUMA Logo to Return On Home Page...</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">Click Link As - Privacy and Cookie Policy</span>
+                <span class="reporter-method-output">Verified - Privacy Policy Page is Displayed.</span>
+                <span class="reporter-method-output">Verified - Privacy Policy Content is Displayed</span>
+                <span class="reporter-method-output">STEP - Clicking LUMA Logo to Return On Home Page...</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">Click Link As - Orders and Returns</span>
+                <span class="reporter-method-output">Verified - Orders and Returns Page is Displayed.</span>
+                <span class="reporter-method-output">STEP - Clicking LUMA Logo to Return On Home Page...</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">Click Link As - Advanced Search</span>
+                <span class="reporter-method-output">Verified - Advanced Search Page is Displayed.</span>
+                <span class="reporter-method-output">STEP - Clicking LUMA Logo to Return On Home Page...</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">Click Link As - Contact Us</span>
+                <span class="reporter-method-output">Verified - Contact Us Page is Displayed.</span>
+                <span class="reporter-method-output">Verified - Contact Us Content is Displayed</span>
+                <span class="reporter-method-output">STEP - Clicking LUMA Logo to Return On Home Page...</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">Verified - Copyrights mark is Displayed</span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testAutomationSetUp</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Check connection to Magento Website...</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Connection Established Successfully...</span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testEmailSubscription</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Navigate to Magento Website Home Page.</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Default Welcome Message is Displayed.</span>
+                <span class="reporter-method-output">STEP - Subscrition email without entering email.</span>
+                <span class="reporter-method-output">Click - Subscribe</span>
+                <span class="reporter-method-output">Verified - Email Required error Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Subscrition email by entering existing email.</span>
+                <span class="reporter-method-output">Click - Subscribe</span>
+                <span class="reporter-method-output">Verified - Error Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Subscrition email by entering new email.</span>
+                <span class="reporter-method-output">Click - Subscribe</span>
+                <span class="reporter-method-output">Verified - Success Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testAddProductToCompare</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Navigate to Magento Website Home Page.</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Default Welcome Message is Displayed.</span>
+                <span class="reporter-method-output">STEP - Choose Product Breathe-Easy Tank to see details</span>
+                <span class="reporter-method-output">Click Link As - Breathe-Easy Tank</span>
+                <span class="reporter-method-output">Verified - Product Name Displayed Correctly</span>
+                <span class="reporter-method-output">STEP - Add Product to Compare List</span>
+                <span class="reporter-method-output">Verified - Success Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Choose Product Hero Hoodie to see details</span>
+                <span class="reporter-method-output">NEXT STEP - Returning back to Home Page...</span>
+                <span class="reporter-method-output">Click Link As - Home</span>
+                <span class="reporter-method-output">Click Link As - Hero Hoodie</span>
+                <span class="reporter-method-output">Verified - Product Name Displayed Correctly</span>
+                <span class="reporter-method-output">STEP - Add Product to Compare List</span>
+                <span class="reporter-method-output">Verified - Success Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Go To Compare Product Page</span>
+                <span class="reporter-method-output">Click - CompareProducts2items</span>
+                <span class="reporter-method-output">Verified - Compare Product Page is Displayed</span>
+                <span class="reporter-method-output">Verified - Comparison Details shown correctly for Hero Hoodie</span>
+                <span class="reporter-method-output">Verified - Comparison Details shown correctly for Breathe Easy Tank</span>
+                <span class="reporter-method-output">Verified - Comparison name shown correctly for Hero Hoodie</span>
+                <span class="reporter-method-output">Verified - Comparison name shown correctly for Breathe Easy Tank</span>
+                <span class="reporter-method-output">Verified - Comparison price shown correctly for Hero Hoodie</span>
+                <span class="reporter-method-output">Verified - Comparison price shown correctly for Breathe Easy Tank</span>
+                <span class="reporter-method-output">STEP - Clicking LUMA Logo to Return On Home Page...</span>
+                <span class="reporter-method-output">Click - </span>
+                <span class="reporter-method-output">STEP - Closing Browser Successfully...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testUserProfileMyAccountSection</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP - Navigate to Magento Website Home Page.</span>
+                <span class="reporter-method-output">STEP - Opening Browser Successfully...</span>
+                <span class="reporter-method-output">Verified - Default Welcome Message is Displayed.</span>
+                <span class="reporter-method-output">STEP - Go to Customer Log In Page and Validate Authenicated User Log In.</span>
+                <span class="reporter-method-output">Click - SignIn</span>
+                <span class="reporter-method-output">Verified - Customer Log In Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Set username and Password</span>
+                <span class="reporter-method-output">Click - SignIn</span>
+                <span class="reporter-method-output">Verified - Logged In User Welcome Message is Displayed</span>
+                <span class="reporter-method-output">STEP - Go to My Account</span>
+                <span class="reporter-method-output">Click - Change</span>
+                <span class="reporter-method-output">Click Link As - My Account</span>
+                <span class="reporter-method-output">Verified - My Account Page is Displayed</span>
+                <span class="reporter-method-output">STEP - Validate Account Information</span>
+                <span class="reporter-method-output">Verified - User Name is Correct</span>
+                <span class="reporter-method-output">Verified - User Email Id is Correct</span>
+                <span class="reporter-method-output">Verified - User is not Subscribed to news letter</span>
+                <span class="reporter-method-output">STEP - Validate Address Book</span>
+                <span class="reporter-method-output">Verified - Billing Address is Correct</span>
+                <span class="reporter-method-output">Verified - Shipping Address is Correct</span>
+                <span class="reporter-method-output">STEP - Go to My Orders</span>
+                <span class="reporter-method-output">Click Link As - My Orders</span>
+                <span class="reporter-method-output">Verified - My Orders Section is Displayed</span>
+                <span class="reporter-method-output">Verified - You have placed no orders.</span>
+                <span class="reporter-method-output">STEP - Go to My Downloadable Products</span>
+                <span class="reporter-method-output">Click Link As - My Downloadable Products</span>
+                <span class="reporter-method-output">Verified - My Downloadable Products Section is Displayed</span>
+                <span class="reporter-method-output">Verified - You have not purchased any downloadable products yet.</span>
+                <span class="reporter-method-output">STEP - Go to My Wish List</span>
+                <span class="reporter-method-output">Click Link As - My Wish List</span>
+                <span class="reporter-method-output">Verified - My Wish List Section is Displayed</span>
+                <span class="reporter-method-output">Verified - You have no items in your wish list.</span>
+                <span class="reporter-method-output">STEP - Go to Stored Payment Methods</span>
+                <span class="reporter-method-output">Click Link As - Stored Payment Methods</span>
+                <span class="reporter-method-output">Verified - Stored Payment Methods Section is Displayed</span>
+                <span class="reporter-method-output">Verified - You have no stored payment methods.</span>
+                <span class="reporter-method-output">STEP - Go to My Product Reviews</span>
+                <span class="reporter-method-output">Click Link As - My Product Reviews</span>
+                <span class="reporter-method-output">Verified - My Product Reviews Section is Displayed</span>
+                <span class="reporter-method-output">Verified - You have submitted no reviews.</span>
+                <span class="reporter-method-output">STEP - Go to Newsletter Subscription</span>
+                <span class="reporter-method-output">Click Link As - Newsletter Subscriptions</span>
+                <span class="reporter-method-output">Verified - Newsletter Subscription Section is Displayed</span>
+                <span class="reporter-method-output">STEP - Go to Saved Cards</span>
+                <span class="reporter-method-output">Click Link As - Saved card</span>
+                <span class="reporter-method-output">Verified - Saved Cards Section is Displayed</span>
+                <span class="reporter-method-output">STEP - Sign Out</span>
+                <span class="reporter-method-output">Click - Change</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.demo.TestDemo</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAutomationSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.shopping.TestProductShopping</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAddProductToCart</span>
+                <span class="method-start">18515 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddProductToCompare</span>
+                <span class="method-start">44791 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddRemoveProductFromWishList</span>
+                <span class="method-start">97591 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewLumaYogaCollectionSortingMethods</span>
+                <span class="method-start">133362 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testProductDetailsMoreInformationAndReviews</span>
+                <span class="method-start">171083 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.myProfile.TestMyProfile</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUserProfileMyAccountSection</span>
+                <span class="method-start">205931 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.shopping.TestShoppingCart</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSecureCheckOutForProducts</span>
+                <span class="method-start">247090 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.home.TestHomePage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testEmailSubscription</span>
+                <span class="method-start">334910 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testHomePageCategoryLinks</span>
+                <span class="method-start">383690 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testHomePageInformationLinks</span>
+                <span class="method-start">449785 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogInAuthenticatedUser</span>
+                <span class="method-start">526955 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegisterUserByUniqueEmailId</span>
+                <span class="method-start">559386 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSearchProductsFromHomePage</span>
+                <span class="method-start">591761 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUserProfileNavigationLinks</span>
+                <span class="method-start">617788 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
